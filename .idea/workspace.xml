@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9629a76d-13c9-47b1-a8c5-8ee582d06fd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/PageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/page/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/translations.en.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/translations.mk.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/panev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/panev.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/systempro-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/systempro-web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/.data/db/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/.data/db/auto.cnf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/.data/db/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/docker/.data/db/ib_buffer_pool" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/.data/db/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/docker/.data/db/ib_logfile0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/.data/db/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/.data/db/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/.data/db/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/.data/db/ibtmp1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose.install.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.install.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-    </list>
+    <list default="true" id="9629a76d-13c9-47b1-a8c5-8ee582d06fd6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,16 +344,23 @@
       <workItem from="1557094461264" duration="2082000" />
       <workItem from="1557953227631" duration="654000" />
       <workItem from="1558383460812" duration="613000" />
-      <workItem from="1558631882202" duration="5608000" />
+      <workItem from="1558631882202" duration="5881000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1558647376955</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558647376955</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19745000" />
+    <option name="totallyTimeSpent" value="20018000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="25" width="1875" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26681247" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -394,8 +374,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.36393088" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49972662" weight="0.27645788" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.36393088" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49972662" visible="true" weight="0.27645788" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50027335" side_tool="true" weight="0.27645788" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -405,6 +385,36 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/docker/php/Dockerfile">
@@ -573,13 +583,6 @@
     <entry file="file://$PROJECT_DIR$/symfony.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Order.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -645,6 +648,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="46" lean-forward="true" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
