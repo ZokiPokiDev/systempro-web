@@ -13,4 +13,4 @@ And that's it, now visit http://symfony.local in web browser.
 
 ## Admin
 
-If you like to see admin check http://symfony.local/admin
+If you like to see **admin** check http://symfony.local/admin
