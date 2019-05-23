@@ -24,6 +24,7 @@
         "symfony/twig-bundle": "^4.3",
         "symfony/validator": "^4.3",
         "symfony/web-link": "^4.3",
+        "symfony/webpack-encore-bundle": "^1.5",
         "symfony/yaml": "^4.3"
     },
     "require-dev": {
@@ -32,6 +33,7 @@
         "symfony/maker-bundle": "*",
         "symfony/test-pack": "*"
     },
+    "minimum-stability": "beta",
     "config": {
         "preferred-install": {
             "*": "dist"

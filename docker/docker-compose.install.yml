@@ -5,6 +5,6 @@ services:
         image: composer:1.8.5
         restart: 'on-failure'
         working_dir: /app
-        command: composer update
+        command: composer require symfony/webpack-encore-bundle
         volumes:
             - ${SYMFONY_APP_PATH}:/app
