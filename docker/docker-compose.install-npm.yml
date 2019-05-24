@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+    nodejs:
+        image: "node:12"
+        user: "node"
+        working_dir: /home/node/app
+        environment:
+            - NODE_ENV=dev
+        volumes:
+            - ${SYMFONY_APP_PATH}:/home/node/app
+        expose:
+            - "8083"
+        command: "npm run build"
