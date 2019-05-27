@@ -1,6 +1,6 @@
 home_page:
     path: /
-    controller: App\Controller\PageController::index
+    controller: App\Controller\PageController::indexAction
 admin:
-    path: /admin
-    controller: '@EasyAdminBundle/Controller/EasyAdminController.php'
+    path: /myadmin
+    controller: App\Controller\AdminController::indexAction
