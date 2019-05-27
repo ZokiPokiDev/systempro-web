@@ -1,3 +1,6 @@
-index:
+home_page:
     path: /
     controller: App\Controller\PageController::index
+admin:
+    path: /admin
+    controller: '@EasyAdminBundle/Controller/EasyAdminController.php'
