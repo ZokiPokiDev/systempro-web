@@ -65,10 +65,12 @@
         },
         "post-install-cmd": [
             "@auto-scripts",
+            "npm i",
             "npm run build"
         ],
         "post-update-cmd": [
             "@auto-scripts",
+            "npm i",
             "npm run build"
         ]
     },

@@ -6,7 +6,6 @@ runtime:
     extensions:
         - apcu
         - mbstring
-        - apcu
 
 build:
     flavor: none
