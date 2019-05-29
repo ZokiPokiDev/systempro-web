@@ -16,14 +16,12 @@ web:
             root: "public"
             expires: 1h
             passthru: "/index.php"
-        '/node_modules':
-            root: 'node_modules'
-            allow: true
 
 disk: 2048
 
 mounts:
     "/var": { source: local, source_path: var }
+    "/node_modules": { source: local, source_path: node_modules }
 
 hooks:
     build: |
