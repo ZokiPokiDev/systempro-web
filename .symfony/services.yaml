@@ -1,0 +1,4 @@
+mydatabase:
+    # supported versions: 5.5, 10.0, 10.1, 10.2
+    type: mysql:5.5
+    disk: 1024
