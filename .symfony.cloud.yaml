@@ -1,6 +1,6 @@
 name: systempro-web
 
-type: php:7.3
+type: nodejs:10
 
 runtime:
     extensions:

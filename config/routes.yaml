@@ -1,6 +1,3 @@
 home_page:
     path: /
     controller: App\Controller\PageController::indexAction
-admin:
-    path: /myadmin
-    controller: App\Controller\AdminController::indexAction
