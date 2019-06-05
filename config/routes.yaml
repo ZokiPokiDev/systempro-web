@@ -1,3 +1,7 @@
 home_page:
     path: /
     controller: App\Controller\PageController::indexAction
+    
+web_profile:
+    path: /profile/
+    controller: App\Controller\WebProfileController::indexAction
