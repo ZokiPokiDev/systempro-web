@@ -7,7 +7,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "easycorp/easyadmin-bundle": "^2.1",
-        "sensio/framework-extra-bundle": "^5.1",
+        "sensio/framework-extra-bundle": "^5.3",
         "symfony/asset": "^4",
         "symfony/console": "^4",
         "symfony/dotenv": "^4",
@@ -64,14 +64,10 @@
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
         "post-install-cmd": [
-            "@auto-scripts",
-            "npm i",
-            "npm run build"
+            "@auto-scripts"
         ],
         "post-update-cmd": [
-            "@auto-scripts",
-            "npm i",
-            "npm run build"
+            "@auto-scripts"
         ]
     },
     "conflict": {

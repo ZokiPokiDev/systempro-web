@@ -1,0 +1,1414 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Kerge - Resume / CV / vCard Template">
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio">
+    <meta name="author" content="lmpixels">
+
+    <link type="text/css" rel="stylesheet" href="./web_profile/kerge/css">
+    <link rel="shortcut icon" href="https://lmpixels.com/demo/kerge-html/version-1/favicon.ico">
+
+    <link rel="stylesheet" href="./web_profile/kerge/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./web_profile/kerge/animate.css" type="text/css">
+    <link rel="stylesheet" href="./web_profile/kerge/animations.css" type="text/css">
+    <link rel="stylesheet" href="./web_profile/kerge/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="./web_profile/kerge/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="./web_profile/kerge/main.css" type="text/css">
+    <link rel="stylesheet" href="./web_profile/kerge/lmpixels-demo-panel.css" type="text/css">
+{% endblock %}
+
+{% block body %}
+    <div id="screen-shader" style="transition: opacity 0.1s ease 0s; z-index: 2147483647; margin: 0; border-radius: 0; padding: 0; background: #111111; pointer-events: none; position: fixed; top: -10%; right: -10%; width: 120%; height: 120%; opacity: 0.4880; mix-blend-mode: multiply; display: none;"></div>
+        
+    <!-- Loading animation -->
+    <div class="preloader" style="display: none;">
+        <div class="preloader-animation">
+            <div class="preloader-spinner">
+            </div>
+        </div>
+    </div>
+    <!-- /Loading animation -->
+    
+    <div id="page" class="page">
+        <!-- Header -->
+        <header id="site_header" class="header mobile-menu-hide">
+            <div class="header-content clearfix">
+                <div class="my-photo">
+                    <img src="./web_profile/kerge/photo.jpg" alt="image">
+                </div>
+    
+                <div class="site-title-block">
+                    <div class="site-title">Alex Smith</div>
+                </div>
+    
+                <!-- Navigation -->
+                <div class="site-nav">
+                    <!-- Main menu -->
+                    <ul id="nav" class="site-main-menu">
+                        <li class="active">
+                            <a class="pt-trigger" href="https://lmpixels.com/demo/kerge-html/version-1/#about-me">About
+                                Me</a><!-- href value = data-id without # of .pt-page. -->
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="https://lmpixels.com/demo/kerge-html/version-1/#resume">Resume</a>
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="https://lmpixels.com/demo/kerge-html/version-1/#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="https://lmpixels.com/demo/kerge-html/version-1/#blog">Blog</a>
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="https://lmpixels.com/demo/kerge-html/version-1/#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- /Main menu -->
+                </div>
+                <!-- Navigation -->
+    
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://lmpixels.com/demo/kerge-html/version-1/#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://lmpixels.com/demo/kerge-html/version-1/#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://lmpixels.com/demo/kerge-html/version-1/#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <!-- / Social Links -->
+    
+                <!-- Copyrights -->
+                <div class="copyrights">© 2018 All rights reserved.</div>
+                <!-- / Copyrights -->
+            </div>
+        </header>
+        <!-- /Header -->
+    
+        <!-- Arrows Nav -->
+        <div class="lmpixels-arrows-nav">
+            <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+            <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+        </div>
+        <!-- /Arrows Nav -->
+    
+        <!-- Mobile Header -->
+        <div class="mobile-header mobile-visible">
+            <div class="mobile-logo-container">
+                <div class="mobile-header-image">
+                    <a href="https://lmpixels.com/demo/kerge-html/version-1/#">
+                        <img src="./web_profile/kerge/photo.jpg" alt="image">
+                    </a>
+                </div>
+                <div class="mobile-site-title"><a href="https://lmpixels.com/demo/kerge-html/version-1/#">Alex Smith</a>
+                </div>
+            </div>
+    
+            <a class="menu-toggle mobile-visible">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- /Mobile Header -->
+    
+        <!-- Main Content -->
+        <div id="main" class="site-main">
+            <!-- Page changer wrapper -->
+            <div class="pt-wrapper">
+                <!-- Subpages -->
+                <div class="subpages">
+    
+                    <!-- Home Subpage -->
+                    <section class="pt-page pt-page-current" data-id="about-me">
+                        <div class="section-inner start-page-full-width">
+                            <div class="start-page-full-width">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 col-lg-6">
+                                        <div class="inner-content">
+                                            <div class="fill-block"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-6">
+                                        <div class="inner-content">
+                                            <div class="hp-text-block">
+                                                <!-- Text rotation / Subtitle -->
+                                                <div class="owl-carousel text-rotation owl-loaded owl-drag">
+    
+    
+                                                    <div class="owl-stage-outer">
+                                                        <div class="owl-stage" style="transform: translate3d(-1186px, 0px, 0px); transition: all 0s ease 0s; width: 3558px;">
+                                                            <div class="owl-item cloned" style="width: 593px;">
+                                                                <div class="item">
+                                                                    <div class="sp-subtitle">Web Designer</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="owl-item cloned" style="width: 593px;">
+                                                                <div class="item">
+                                                                    <div class="sp-subtitle">Frontend-developer</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="owl-item active" style="width: 593px;">
+                                                                <div class="item">
+                                                                    <div class="sp-subtitle">Web Designer</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="owl-item" style="width: 593px;">
+                                                                <div class="item">
+                                                                    <div class="sp-subtitle">Frontend-developer</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="owl-item cloned" style="width: 593px;">
+                                                                <div class="item">
+                                                                    <div class="sp-subtitle">Web Designer</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="owl-item cloned" style="width: 593px;">
+                                                                <div class="item">
+                                                                    <div class="sp-subtitle">Frontend-developer</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="owl-nav disabled">
+                                                        <div class="owl-prev">prev</div>
+                                                        <div class="owl-next">next</div>
+                                                    </div>
+                                                    <div class="owl-dots disabled"></div>
+                                                </div>
+                                                <!-- /Text rotation / Subtitle -->
+                                                <h2 class="hp-main-title">Alex Smith</h2>
+                                                <p>Praesent sed aliquam arcu, non accumsan neque. In odio ante, vulputate ac
+                                                    magna vel, pharetra lobortis quam. Duis enim tortor, egestas et felis
+                                                    id, lobortis malesuada magna. Nunc sit amet sagittis nisi, eu semper
+                                                    nisl. Cras ut dictum nisl. Donec tincidunt eget orci.</p>
+                                                <p>Aliquam mollis, leo nec commodo facilisis, turpis lorem dapibus erat, sed
+                                                    consectetur nunc nulla ac elit. Suspendisse dictum id dui mollis auctor.
+                                                    Etiam id sapien neque. Cras nec rhoncus sem. Mauris metus ligula, varius
+                                                    vel iaculis at, pulvinar tincidunt magna.</p>
+                                                <div class="hp-buttons">
+                                                    <a href="https://lmpixels.com/demo/kerge-html/version-1/#" target="_blank" class="btn btn-primary">Download
+                                                        CV</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="section-inner custom-page-content">
+                            <div class="page-content">
+                                <!-- Services Block Title -->
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="col-inner">
+                                            <div class="block-title">
+                                                <h3>What I Do</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Services Block Title -->
+    
+                                <!-- Services Block -->
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="col-inner">
+                                            <div class="info-list-w-icon">
+                                                <!-- Service Item 1 -->
+                                                <div class="info-block-w-icon">
+                                                    <div class="ci-icon">
+                                                        <i class="lnr lnr-store"></i>
+                                                    </div>
+                                                    <div class="ci-text">
+                                                        <h4>Ecommerce</h4>
+                                                        <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
+                                                            tortor bibendum massa, sit amet ultricies ex lectus scelerisque
+                                                            nibh. Ut non sodales odio.</p>
+                                                    </div>
+                                                </div>
+                                                <!-- /Service Item 1 -->
+    
+                                                <!-- Service Item 2 -->
+                                                <div class="info-block-w-icon">
+                                                    <div class="ci-icon">
+                                                        <i class="lnr lnr-laptop-phone"></i>
+                                                    </div>
+                                                    <div class="ci-text">
+                                                        <h4>Web Design</h4>
+                                                        <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
+                                                            tortor bibendum massa, sit amet ultricies ex lectus scelerisque
+                                                            nibh. Ut non sodales odio.</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Service Item 2 -->
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="col-inner">
+                                            <div class="info-list-w-icon">
+                                                <!-- Service Item 3 -->
+                                                <div class="info-block-w-icon">
+                                                    <div class="ci-icon">
+                                                        <i class="lnr lnr-pencil"></i>
+                                                    </div>
+                                                    <div class="ci-text">
+                                                        <h4>Copywriter</h4>
+                                                        <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
+                                                            tortor bibendum massa, sit amet ultricies ex lectus scelerisque
+                                                            nibh. Ut non sodales odio.</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Service Item 3 -->
+    
+                                                <!-- Service Item 4 -->
+                                                <div class="info-block-w-icon">
+                                                    <div class="ci-icon">
+                                                        <i class="lnr lnr-flag"></i>
+                                                    </div>
+                                                    <div class="ci-text">
+                                                        <h4>Management</h4>
+                                                        <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
+                                                            tortor bibendum massa, sit amet ultricies ex lectus scelerisque
+                                                            nibh. Ut non sodales odio.</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Service Item 4 -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Services Block -->
+    
+                                <!-- Testimonials Block -->
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="col-inner ts-25 bs-50">
+                                            <!-- Testimonials Block Title -->
+                                            <div class="block-title">
+                                                <h3>Testimonials<span></span></h3>
+                                            </div>
+                                            <!-- /Testimonials Block Title -->
+    
+                                            <!-- Testimonials Carousel Block -->
+                                            <div class="testimonials owl-carousel owl-loaded owl-drag">
+                                                <!-- Testimonial 1 -->
+    
+                                                <!-- End of Testimonial 1 -->
+    
+                                                <!-- Testimonial 2 -->
+    
+                                                <!-- End of Testimonial 2 -->
+    
+                                                <!-- Testimonial 3 -->
+    
+                                                <!-- End of Testimonial 3 -->
+                                                <div class="owl-stage-outer">
+                                                    <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2370px;">
+                                                        <div class="owl-item active" style="width: 765px; margin-right: 25px;">
+                                                            <div class="testimonial-item">
+    
+                                                                <!-- Testimonial Content -->
+                                                                <div class="testimonial-content">
+                                                                    <div class="testimonial-text">
+                                                                        <p>Nam tempor commodo mi id sodales. Aenean sit amet
+                                                                            nibh nec sapien consequat porta a sit amet
+                                                                            diam.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- /Testimonial Content -->
+    
+                                                                <!-- Testimonial Author -->
+                                                                <div class="testimonial-credits">
+                                                                    <!-- Picture -->
+                                                                    <div class="testimonial-picture">
+                                                                        <img src="./web_profile/kerge/testimonial-2.jpg" alt="Gary Johnson">
+                                                                    </div>
+                                                                    <!-- /Picture -->
+                                                                    <!-- Testimonial author information -->
+                                                                    <div class="testimonial-author-info">
+                                                                        <p class="testimonial-author">Gary Johnson</p>
+                                                                        <p class="testimonial-firm">Locost Accessories</p>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- /Testimonial author information -->
+    
+                                                            </div>
+                                                        </div>
+                                                        <div class="owl-item active" style="width: 765px; margin-right: 25px;">
+                                                            <div class="testimonial-item">
+    
+                                                                <!-- Testimonial Content -->
+                                                                <div class="testimonial-content">
+                                                                    <div class="testimonial-text">
+                                                                        <p>Donec eu est vel metus consequat volutpat. Nunc
+                                                                            aliquet euismod mauris, a feugiat urna
+                                                                            ullamcorper non.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- /Testimonial Content -->
+    
+                                                                <!-- Testimonial Author -->
+                                                                <div class="testimonial-credits">
+                                                                    <!-- Picture -->
+                                                                    <div class="testimonial-picture">
+                                                                        <img src="./web_profile/kerge/testimonial-1.jpg" alt="Daniel Pringle">
+                                                                    </div>
+                                                                    <!-- /Picture -->
+                                                                    <!-- Testimonial author information -->
+                                                                    <div class="testimonial-author-info">
+                                                                        <p class="testimonial-author">Daniel Pringle</p>
+                                                                        <p class="testimonial-firm">Rolling Thunder</p>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- /Testimonial author information -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="owl-item" style="width: 765px; margin-right: 25px;">
+                                                            <div class="testimonial-item">
+    
+                                                                <!-- Testimonial Content -->
+                                                                <div class="testimonial-content">
+                                                                    <div class="testimonial-text">
+                                                                        <p>Etiam pretium ipsum quis justo dictum accumsan.
+                                                                            Phasellus egestas odio a velit scelerisque,
+                                                                            imperdiet elementum lorem aliquet.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- /Testimonial Content -->
+    
+                                                                <!-- Testimonial Author -->
+                                                                <div class="testimonial-credits">
+                                                                    <!-- Picture -->
+                                                                    <div class="testimonial-picture">
+                                                                        <img src="./web_profile/kerge/testimonial-3.jpg" alt="Billy Adams">
+                                                                    </div>
+                                                                    <!-- /Picture -->
+                                                                    <!-- Testimonial author information -->
+                                                                    <div class="testimonial-author-info">
+                                                                        <p class="testimonial-author">Billy Adams</p>
+                                                                        <p class="testimonial-firm">Sagebrush</p>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- /Testimonial author information -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-nav">
+                                                    <div class="owl-prev disabled"></div>
+                                                    <div class="owl-next"></div>
+                                                </div>
+                                                <div class="owl-dots">
+                                                    <div class="owl-dot active"><span></span></div>
+                                                    <div class="owl-dot"><span></span></div>
+                                                </div>
+                                            </div>
+                                            <!-- /Testimonials Carousel Block -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Testimonials Block -->
+    
+                                <!-- Clients Block -->
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="col-inner">
+                                            <!-- Clients Block Title -->
+                                            <div class="block-title">
+                                                <h3>Clients<span></span></h3>
+                                            </div>
+                                            <!-- /Clients Block Title -->
+    
+                                            <!-- Clients Carousel Block -->
+                                            <div class="clients owl-carousel owl-loaded owl-drag">
+    
+    
+                                                <div class="owl-stage-outer">
+                                                    <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1826px;">
+                                                        <div class="owl-item active" style="width: 250.833px; margin-right: 10px;">
+                                                            <div class="client-block">
+                                                                <a href="https://lmpixels.com/demo/kerge-html/version-1/#" target="_blank" title="Logo">
+                                                                    <img src="./web_profile/kerge/client-7.png" alt="Logo">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="owl-item active" style="width: 250.833px; margin-right: 10px;">
+                                                            <div class="client-block">
+                                                                <a href="https://lmpixels.com/demo/kerge-html/version-1/#" target="_blank" title="Logo">
+                                                                    <img src="./web_profile/kerge/client-6.png" alt="Logo">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="owl-item active" style="width: 250.833px; margin-right: 10px;">
+                                                            <div class="client-block">
+                                                                <a href="https://lmpixels.com/demo/kerge-html/version-1/#" target="_blank" title="Logo">
+                                                                    <img src="./web_profile/kerge/client-5.png" alt="Logo">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="owl-item active" style="width: 250.833px; margin-right: 10px;">
+                                                            <div class="client-block">
+                                                                <a href="https://lmpixels.com/demo/kerge-html/version-1/#" target="_blank" title="Logo">
+                                                                    <img src="./web_profile/kerge/client-4.png" alt="Logo">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="owl-item active" style="width: 250.833px; margin-right: 10px;">
+                                                            <div class="client-block">
+                                                                <a href="https://lmpixels.com/demo/kerge-html/version-1/#" target="_blank" title="Logo">
+                                                                    <img src="./web_profile/kerge/client-3.png" alt="Logo">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="owl-item active" style="width: 250.833px; margin-right: 10px;">
+                                                            <div class="client-block">
+                                                                <a href="https://lmpixels.com/demo/kerge-html/version-1/#" target="_blank" title="Logo">
+                                                                    <img src="./web_profile/kerge/client-2.png" alt="Logo">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="owl-item active" style="width: 250.833px; margin-right: 10px;">
+                                                            <div class="client-block">
+                                                                <a href="https://lmpixels.com/demo/kerge-html/version-1/#" target="_blank" title="Logo">
+                                                                    <img src="./web_profile/kerge/client-1.png" alt="Logo">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-nav">
+                                                    <div class="owl-prev disabled"></div>
+                                                    <div class="owl-next"></div>
+                                                </div>
+                                                <div class="owl-dots">
+                                                    <div class="owl-dot active"><span></span></div>
+                                                    <div class="owl-dot"><span></span></div>
+                                                </div>
+                                            </div>
+                                            <!-- /Clients Carousel Block -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Clients Block -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End of Home Subpage -->
+    
+                    <!-- Resume Subpage -->
+                    <section class="pt-page" data-id="resume">
+                        <div class="section-inner custom-page-content">
+                            <div class="section-title-block second-style">
+                                <h2 class="section-title">Resume</h2>
+                                <h5 class="section-description">7 Years of Experience</h5>
+                            </div>
+    
+                            <div class="section-content">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-8">
+                                        <div class="col-inner bs-30">
+                                            <div class="block-title">
+                                                <h3>Education</h3>
+                                            </div>
+    
+                                            <div class="timeline timeline-second-style bs-30 clearfix">
+                                                <div class="timeline-item clearfix">
+                                                    <div class="left-part">
+                                                        <h5 class="item-period">2008</h5>
+                                                        <span class="item-company">University of Studies</span>
+                                                    </div>
+                                                    <div class="divider"></div>
+                                                    <div class="right-part">
+                                                        <h4 class="item-title">Fronted Development</h4>
+                                                        <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor
+                                                            aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in,
+                                                            lobortis ante.</p>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="timeline-item clearfix">
+                                                    <div class="left-part">
+                                                        <h5 class="item-period">2007</h5>
+                                                        <span class="item-company">University of Studies</span>
+                                                    </div>
+                                                    <div class="divider"></div>
+                                                    <div class="right-part">
+                                                        <h4 class="item-title">Graphic Design</h4>
+                                                        <p>Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis
+                                                            iaculis, feugiat risus quis, aliquet urna. Quisque fringilla
+                                                            mollis risus, eu pulvinar dolor.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="block-title">
+                                                <h3>Experience<span></span></h3>
+                                            </div>
+    
+    
+                                            <div class="timeline timeline-second-style clearfix">
+                                                <div class="timeline-item clearfix">
+                                                    <div class="left-part">
+                                                        <h5 class="item-period">2016 - Current</h5>
+                                                        <span class="item-company">Google</span>
+                                                    </div>
+                                                    <div class="divider"></div>
+                                                    <div class="right-part">
+                                                        <h4 class="item-title">Lead Ui/Ux Designer</h4>
+                                                        <p>Praesent dignissim sollicitudin justo, sed elementum quam lacinia
+                                                            quis. Phasellus eleifend tristique posuere. Sed vitae dui nec
+                                                            magna.</p>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="timeline-item clearfix">
+                                                    <div class="left-part">
+                                                        <h5 class="item-period">2013 - 2016</h5>
+                                                        <span class="item-company">Adobe</span>
+                                                    </div>
+                                                    <div class="divider"></div>
+                                                    <div class="right-part">
+                                                        <h4 class="item-title">Senior Ui/Ux Designer</h4>
+                                                        <p>Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin
+                                                            vitae nulla tristique, ornare felis id, congue libero. Nam
+                                                            volutpat euismod quam.</p>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="timeline-item clearfix">
+                                                    <div class="left-part">
+                                                        <h5 class="item-period">2011 - 2013</h5>
+                                                        <span class="item-company">Google</span>
+                                                    </div>
+                                                    <div class="divider"></div>
+                                                    <div class="right-part">
+                                                        <h4 class="item-title">Junior Ui/Ux Designer</h4>
+                                                        <p>Duis mollis nunc quis quam viverra venenatis. Nulla nulla arcu,
+                                                            congue vitae nunc ac, sodales ultricies diam. Nullam justo leo,
+                                                            tincidunt sit amet.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-xs-12 col-sm-4">
+                                        <div class="col-inner">
+    
+                                            <div class="block-title">
+                                                <h3>Design Skills<span></span></h3>
+                                            </div>
+    
+                                            <div class="skills-info skills-second-style">
+                                                <!-- Skill 1 -->
+                                                <div class="clearfix">
+                                                    <h4>Web Design</h4>
+                                                    <div class="skill-value">95%</div>
+                                                </div>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-1"></div>
+                                                </div>
+                                                <!-- /Skill 1 -->
+    
+                                                <!-- Skill 2 -->
+                                                <div class="clearfix">
+                                                    <h4>Print Design</h4>
+                                                    <div class="skill-value">65%</div>
+                                                </div>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-2"></div>
+                                                </div>
+                                                <!-- /Skill 2 -->
+    
+                                                <!-- Skill 3 -->
+                                                <div class="clearfix">
+                                                    <h4>Logo Design</h4>
+                                                    <div class="skill-value">80%</div>
+                                                </div>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-3"></div>
+                                                </div>
+                                                <!-- /Skill 3 -->
+    
+                                                <!-- Skill 4 -->
+                                                <div class="clearfix">
+                                                    <h4>Graphic Design</h4>
+                                                    <div class="skill-value">90%</div>
+                                                </div>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-4"></div>
+                                                </div>
+                                                <!-- /Skill 4 -->
+                                            </div>
+    
+                                            <div class="block-title ts-10">
+                                                <h3>Coding Skills<span></span></h3>
+                                            </div>
+    
+    
+                                            <div class="skills-info skills-second-style">
+                                                <!-- Skill 5 -->
+                                                <div class="clearfix">
+                                                    <h4>JavaScript</h4>
+                                                    <div class="skill-value">85%</div>
+                                                </div>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-5"></div>
+                                                </div>
+                                                <!-- /Skill 5 -->
+    
+                                                <!-- Skill 6 -->
+                                                <div class="clearfix">
+                                                    <h4>PHP</h4>
+                                                    <div class="skill-value">70%</div>
+                                                </div>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-6"></div>
+                                                </div>
+                                                <!-- /Skill 6 -->
+    
+                                                <!-- Skill 7 -->
+                                                <div class="clearfix">
+                                                    <h4>Python</h4>
+                                                    <div class="skill-value">60%</div>
+                                                </div>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-7"></div>
+                                                </div>
+                                                <!-- /Skill 7 -->
+    
+                                                <!-- Skill 8 -->
+                                                <div class="clearfix">
+                                                    <h4>Perl</h4>
+                                                    <div class="skill-value">75%</div>
+                                                </div>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-8"></div>
+                                                </div>
+                                                <!-- /Skill 8 -->
+    
+                                                <!-- Skill 9 -->
+                                                <div class="clearfix">
+                                                    <h4>HTML / CSS</h4>
+                                                    <div class="skill-value">100%</div>
+                                                </div>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-9"></div>
+                                                </div>
+                                                <!-- /Skill 9 -->
+    
+                                                <!-- Skill 10 -->
+                                                <div class="clearfix">
+                                                    <h4>Smarty / Twig</h4>
+                                                    <div class="skill-value">80%</div>
+                                                </div>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-10"></div>
+                                                </div>
+                                                <!-- /Skill 10 -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="col-inner ts-30">
+                                            <a href="https://lmpixels.com/demo/kerge-html/version-1/#" target="_blank" class="btn btn-primary">Download
+                                                CV</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End of Resume Subpage -->
+    
+    
+                    <!-- Portfolio Subpage -->
+                    <section class="pt-page" data-id="portfolio">
+                        <div class="section-inner custom-page-content">
+                            <div class="section-title-block second-style">
+                                <h2 class="section-title">Portfolio</h2>
+                                <h5 class="section-description">My Works</h5>
+                            </div>
+    
+                            <div class="section-content">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <!-- Portfolio Content -->
+                                        <div class="portfolio-content">
+    
+                                            <ul class="portfolio-filters">
+                                                <li class="active">
+                                                    <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
+                                                </li>
+                                                <li>
+                                                    <a class="filter btn btn-sm btn-link" data-group="category_media">Media</a>
+                                                </li>
+                                                <li>
+                                                    <a class="filter btn btn-sm btn-link" data-group="category_mockups">Mockups</a>
+                                                </li>
+                                                <li>
+                                                    <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">SoundCloud</a>
+                                                </li>
+                                                <li>
+                                                    <a class="filter btn btn-sm btn-link" data-group="category_vimeo-videos">Vimeo Videos</a>
+                                                </li>
+                                                <li>
+                                                    <a class="filter btn btn-sm btn-link" data-group="category_youtube-videos">YouTube Videos</a>
+                                                </li>
+                                            </ul>
+    
+                                            <!-- Portfolio Grid -->
+                                            <div class="portfolio-grid three-columns shuffle" style="position: relative; overflow: hidden; height: 738.624px; transition: height 450ms ease-out 0s;">
+    
+                                                <figure class="item lbaudio shuffle-item filtered" data-groups="[&quot;category_all&quot;, &quot;category_soundcloud&quot;]"
+                                                        style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s;">
+                                                    <div class="portfolio-item-img">
+                                                        <img src="./web_profile/kerge/1.jpg" alt="SoundCloud Audio" title="">
+                                                        <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221650664&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"
+                                                           class="lightbox mfp-iframe" title="SoundCloud Audio"></a>
+                                                    </div>
+    
+                                                    <i class="fa fa-volume-up"></i>
+                                                    <h4 class="name">SoundCloud Audio</h4>
+                                                    <span class="category">SoundCloud</span>
+                                                </figure>
+    
+                                                <figure class="item standard shuffle-item filtered" data-groups="[&quot;category_all&quot;, &quot;category_media&quot;]"
+                                                        style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(523px, 0px, 0px) scale3d(1, 1, 1); transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s;">
+                                                    <div class="portfolio-item-img">
+                                                        <img src="./web_profile/kerge/2.jpg" alt="Media Project 2" title="">
+                                                        <a href="https://lmpixels.com/demo/kerge-html/version-1/portfolio-1.html" class="ajax-page-load"></a>
+                                                    </div>
+    
+                                                    <i class="far fa-file-alt"></i>
+                                                    <h4 class="name">Media Project 2</h4>
+                                                    <span class="category">Media</span>
+                                                </figure>
+    
+                                                <figure class="item lbvideo shuffle-item filtered" data-groups="[&quot;category_all&quot;, &quot;category_vimeo-videos&quot;]"
+                                                        style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(1046px, 0px, 0px) scale3d(1, 1, 1); transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s;">
+                                                    <div class="portfolio-item-img">
+                                                        <img src="./web_profile/kerge/3.jpg" alt="Vimeo Video 1" title="">
+                                                        <a href="https://player.vimeo.com/video/158284739" class="lightbox mfp-iframe" title="Vimeo Video 1"></a>
+                                                    </div>
+    
+                                                    <i class="fas fa-video"></i>
+                                                    <h4 class="name">Vimeo Video 1</h4>
+                                                    <span class="category">Vimeo Videos</span>
+                                                </figure>
+    
+                                                <figure class="item standard shuffle-item filtered" data-groups="[&quot;category_all&quot;, &quot;category_media&quot;]"
+                                                        style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(0px, 369px, 0px) scale3d(1, 1, 1); transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s;">
+                                                    <div class="portfolio-item-img">
+                                                        <img src="./web_profile/kerge/4.jpg" alt="Media Project 1" title="">
+                                                        <a href="https://lmpixels.com/demo/kerge-html/version-1/portfolio-1.html" class="ajax-page-load"></a>
+                                                    </div>
+    
+                                                    <i class="far fa-file-alt"></i>
+                                                    <h4 class="name">Media Project 1</h4>
+                                                    <span class="category">Media</span>
+                                                </figure>
+    
+                                                <figure class="item lbimage shuffle-item filtered" data-groups="[&quot;category_all&quot;, &quot;category_mockups&quot;]"
+                                                        style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(523px, 369px, 0px) scale3d(1, 1, 1); transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s;">
+                                                    <div class="portfolio-item-img">
+                                                        <img src="./web_profile/kerge/5.jpg" alt="Mockup Design 1" title="">
+                                                        <a class="lightbox" title="Mockup Design 1" href="./web_profile/kerge/5.jpg"></a>
+                                                    </div>
+    
+                                                    <i class="far fa-image"></i>
+                                                    <h4 class="name">Mockup Design 1</h4>
+                                                    <span class="category">Mockups</span>
+                                                </figure>
+    
+                                                <figure class="item lbvideo shuffle-item filtered" data-groups="[&quot;category_all&quot;, &quot;category_youtube-videos&quot;]"
+                                                        style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(1046px, 369px, 0px) scale3d(1, 1, 1); transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s;">
+                                                    <div class="portfolio-item-img">
+                                                        <img src="./web_profile/kerge/6.jpg" alt="YouTube Video 1" title="">
+                                                        <a href="https://www.youtube.com/embed/bg0gv2YpIok" class="lightbox mfp-iframe" title="YouTube Video 1"></a>
+                                                    </div>
+    
+                                                    <i class="fas fa-video"></i>
+                                                    <h4 class="name">YouTube Video 1</h4>
+                                                    <span class="category">YouTube Videos</span>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <!-- /Portfolio Content -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /Portfolio Subpage -->
+    
+                    <!-- Blog Subpage -->
+                    <section class="pt-page" data-id="blog">
+                        <div class="section-inner custom-page-content">
+                            <div class="section-title-block second-style">
+                                <h2 class="section-title">Blog</h2>
+                                <h5 class="section-description">My Diary</h5>
+                            </div>
+    
+                            <div class="section-content">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="blog-masonry two-columns clearfix" style="position: relative; height: 1432.78px;">
+    
+                                            <!-- Blog Post 1 -->
+                                            <div class="item post-1" style="position: absolute; left: 0px; top: 0px;">
+                                                <div class="blog-card">
+                                                    <div class="media-block">
+                                                        <div class="category">
+                                                            <a href="https://lmpixels.com/demo/kerge-html/version-1/#" title="View all posts in UI">UI</a>
+                                                        </div>
+                                                        <a href="https://lmpixels.com/demo/kerge-html/version-1/blog-post-1.html">
+                                                            <img src="./web_profile/kerge/blog_post_6.jpg" class="size-blog-masonry-image-two-c" alt="Best Practices for Animated Progress Indicators"
+                                                                 title="">
+                                                            <div class="mask"></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <div class="post-date">06 Apr 2018</div>
+                                                        <a href="https://lmpixels.com/demo/kerge-html/version-1/blog-post-1.html">
+                                                            <h4 class="blog-item-title">Best Practices for Animated Progress
+                                                                Indicators</h4>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End of Blog Post 1 -->
+    
+                                            <!-- Blog Post 2 -->
+                                            <div class="item post-2" style="position: absolute; left: 794px; top: 0px; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms; transform: translate3d(-2.5px, 0px, 0px);">
+                                                <div class="blog-card">
+                                                    <div class="media-block">
+                                                        <div class="category">
+                                                            <a href="https://lmpixels.com/demo/kerge-html/version-1/#" title="View all posts in E-Commerce">E-Commerce</a>
+                                                        </div>
+                                                        <a href="https://lmpixels.com/demo/kerge-html/version-1/blog-post-1.html">
+                                                            <img src="./web_profile/kerge/blog_post_5.jpg" class="size-blog-masonry-image-two-c " alt="Designing the Perfect Feature Comparison Table"
+                                                                 title="">
+                                                            <div class="mask"></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <div class="post-date">06 Apr 2018</div>
+                                                        <a href="https://lmpixels.com/demo/kerge-html/version-1/blog-post-1.html">
+                                                            <h4 class="blog-item-title">Designing the Perfect Feature
+                                                                Comparison Table</h4>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End of Blog Post 2 -->
+    
+                                            <!-- Blog Post 3 -->
+                                            <div class="item post-3" style="position: absolute; left: 0px; top: 478px; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms; transform: translate3d(0px, -0.406px, 0px);">
+                                                <div class="blog-card">
+                                                    <div class="media-block">
+                                                        <div class="category">
+                                                            <a href="https://lmpixels.com/demo/kerge-html/version-1/#" title="View all posts in E-Commerce">E-Commerce</a>
+                                                        </div>
+                                                        <a href="https://lmpixels.com/demo/kerge-html/version-1/blog-post-1.html">
+                                                            <img src="./web_profile/kerge/blog_post_4.jpg" class="size-blog-masonry-image-two-c" alt="An Overview of E-Commerce Platforms"
+                                                                 title="">
+                                                            <div class="mask"></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <div class="post-date">06 Apr 2018</div>
+                                                        <a href="https://lmpixels.com/demo/kerge-html/version-1/blog-post-1.html">
+                                                            <h4 class="blog-item-title">An Overview of E-Commerce
+                                                                Platforms</h4>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End of Blog Post 3 -->
+    
+                                            <!-- Blog Post 4 -->
+                                            <div class="item post-4" style="position: absolute; left: 794px; top: 478px; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms; transform: translate3d(-2.5px, -0.406px, 0px);">
+                                                <div class="blog-card">
+                                                    <div class="media-block">
+                                                        <div class="category">
+                                                            <a href="https://lmpixels.com/demo/kerge-html/version-1/#" title="View all posts in Design">Design</a>
+                                                        </div>
+                                                        <a href="https://lmpixels.com/demo/kerge-html/version-1/blog-post-1.html">
+                                                            <img src="./web_profile/kerge/blog_post_3.jpg" class="size-blog-masonry-image-two-c" alt="Why I Switched to Sketch For UI Design"
+                                                                 title="">
+                                                            <div class="mask"></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <div class="post-date">06 Apr 2018</div>
+                                                        <a href="https://lmpixels.com/demo/kerge-html/version-1/blog-post-1.html">
+                                                            <h4 class="blog-item-title">Why I Switched to Sketch For UI
+                                                                Design</h4>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End of Blog Post 4 -->
+    
+                                            <!-- Blog Post 5 -->
+                                            <div class="item post-5" style="position: absolute; left: 0px; top: 957px; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms; transform: translate3d(0px, -1.812px, 0px);">
+                                                <div class="blog-card">
+                                                    <div class="media-block">
+                                                        <div class="category">
+                                                            <a href="https://lmpixels.com/demo/kerge-html/version-1/#" title="View all posts in UI">UI</a>
+                                                        </div>
+                                                        <a href="https://lmpixels.com/demo/kerge-html/version-1/blog-post-1.html">
+                                                            <img src="./web_profile/kerge/blog_post_2.jpg" class="size-blog-masonry-image-two-c" alt="Creative and Innovative Navigation Designs"
+                                                                 title="">
+                                                            <div class="mask"></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <div class="post-date">06 Apr 2018</div>
+                                                        <a href="https://lmpixels.com/demo/kerge-html/version-1/blog-post-1.html">
+                                                            <h4 class="blog-item-title">Creative and Innovative Navigation
+                                                                Designs</h4>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End of Blog Post 5 -->
+    
+                                            <!-- Blog Post 6 -->
+                                            <div class="item post-6" style="position: absolute; left: 794px; top: 957px; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms; transform: translate3d(-2.5px, -1.812px, 0px);">
+                                                <div class="blog-card">
+                                                    <div class="media-block">
+                                                        <div class="category">
+                                                            <a href="https://lmpixels.com/demo/kerge-html/version-1/#" title="View all posts in Design">Design</a>
+                                                        </div>
+                                                        <a href="https://lmpixels.com/demo/kerge-html/version-1/blog-post-1.html">
+                                                            <img src="./web_profile/kerge/blog_post_1.jpg" class="size-blog-masonry-image-two-c" alt="6 Easy Steps to Better Icon Design"
+                                                                 title="">
+                                                            <div class="mask"></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <div class="post-date">06 Apr 2018</div>
+                                                        <a href="https://lmpixels.com/demo/kerge-html/version-1/blog-post-1.html">
+                                                            <h4 class="blog-item-title">6 Easy Steps to Better Icon
+                                                                Design</h4>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End of Blog Post 6 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /Blog Subpage -->
+    
+                    <!-- Contact Subpage -->
+                    <section class="pt-page" data-id="contact">
+                        <div class="section-inner custom-page-content">
+                            <div class="section-title-block second-style">
+                                <h2 class="section-title">Contact</h2>
+                                <h5 class="section-description">Get in Touch</h5>
+                            </div>
+    
+                            <div class="section-content">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div id="map" class="map" style="position: relative; overflow: hidden;">
+                                            <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+                                                <div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+                                                    <div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: none;">
+                                                        <div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                                    <div style="position: absolute; z-index: 984; transform: matrix(1, 0, 0, 1, -157, -150);">
+                                                                        <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: -768px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: 768px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div>
+                                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div>
+                                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+                                                                <div style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+                                                                    <div style="position: absolute; z-index: 984; transform: matrix(1, 0, 0, 1, -157, -150);">
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div>
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;"></div>
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;"></div>
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 0px;"></div>
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 0px;"></div>
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -768px; top: 0px;"></div>
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 768px; top: 0px;"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -14px; top: -43px; z-index: 0;">
+                                                                    <img alt="" src="./web_profile/kerge/spotlight-poi2.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                </div>
+                                                            </div>
+                                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                                <div style="position: absolute; z-index: 984; transform: matrix(1, 0, 0, 1, -157, -150);">
+                                                                    <div style="position: absolute; left: 768px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                        <img draggable="false" alt="" role="presentation" src="./web_profile/kerge/vt" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                    <div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                        <img draggable="false" alt="" role="presentation" src="./web_profile/kerge/vt(1)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                    <div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                        <img draggable="false" alt="" role="presentation" src="./web_profile/kerge/vt(2)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                    <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                        <img draggable="false" alt="" role="presentation" src="./web_profile/kerge/vt(3)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                    <div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                        <img draggable="false" alt="" role="presentation" src="./web_profile/kerge/vt(4)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                    <div style="position: absolute; left: -768px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                        <img draggable="false" alt="" role="presentation" src="./web_profile/kerge/vt(5)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                    <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                        <img draggable="false" alt="" role="presentation" src="./web_profile/kerge/vt(6)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;">
+                                                            <p class="gm-style-pbt"></p>
+                                                        </div>
+                                                        <div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
+                                                            <div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
+                                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
+                                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
+                                                                    <div style="width: 27px; height: 43px; overflow: hidden; position: absolute; opacity: 0; left: -14px; top: -43px; z-index: 0;">
+                                                                        <img alt="" src="./web_profile/kerge/spotlight-poi2.png" draggable="false" usemap="#gmimap0"
+                                                                             style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                        <map name="gmimap0" id="gmimap0">
+                                                                            <area log="miw" coords="13.5,0,4,3.75,0,13.5,13.5,43,27,13.5,23,3.75" shape="poly"
+                                                                                  title="" style="cursor: pointer; touch-action: none;">
+                                                                        </map>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <iframe aria-hidden="true" frameborder="0" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"
+                                                            src="./web_profile/kerge/saved_resource.html"></iframe>
+                                                    <div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+                                                        <a target="_blank" rel="noopener" href="https://maps.google.com/maps?ll=37.776862,-122.395319&amp;z=16&amp;t=m&amp;hl=en-GB&amp;gl=US&amp;mapclient=apiv3"
+                                                           title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;">
+                                                            <div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" src="./web_profile/kerge/google4.png"
+                                                                                                                          draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
+                                                            </div>
+                                                        </a></div>
+                                                    <div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 300px; height: 140px; position: absolute; left: 628px; top: 5px;">
+                                                        <div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div>
+                                                        <div style="font-size: 13px;">Map data ©2019 Google</div>
+                                                        <button draggable="false" title="Close" aria-label="Close" type="button" class="gm-ui-hover-effect"
+                                                                style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: absolute; cursor: pointer; user-select: none; top: 0px; right: 0px; width: 37px; height: 37px;">
+                                                            <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                 style="pointer-events: none; display: block; width: 13px; height: 13px; margin: 12px;">
+                                                        </button>
+                                                    </div>
+                                                    <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 166px; bottom: 0px; width: 121px;">
+                                                        <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;">
+                                                            <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                                <div style="width: 1px;"></div>
+                                                                <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                                            </div>
+                                                            <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                                                <a style="text-decoration: none; cursor: pointer; display: none;">Map
+                                                                    Data</a><span>Map data ©2019 Google</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
+                                                        <div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">
+                                                            Map data ©2019 Google
+                                                        </div>
+                                                    </div>
+                                                    <div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 95px; bottom: 0px;">
+                                                        <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                            <div style="width: 1px;"></div>
+                                                            <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                                        </div>
+                                                        <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                                            <a href="https://www.google.com/intl/en-GB_US/help/terms_maps.html" target="_blank" rel="noopener"
+                                                               style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms
+                                                                of Use</a></div>
+                                                    </div>
+                                                    <button draggable="false" title="Toggle fullscreen view" aria-label="Toggle fullscreen view"
+                                                            type="button" class="gm-control-active gm-fullscreen-control" style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;">
+                                                        <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%20018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                             style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                                                     style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                                                                                             style="height: 18px; width: 18px;"></button>
+                                                    <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
+                                                        <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                            <div style="width: 1px;"></div>
+                                                            <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                                        </div>
+                                                        <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                                            <a target="_blank" rel="noopener" title="Report errors in the road map or imagery to Google"
+                                                               href="https://www.google.com/maps/@37.7768616,-122.3953186,16z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3"
+                                                               style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report
+                                                                a map error</a></div>
+                                                    </div>
+                                                    <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false"
+                                                         controlwidth="0" controlheight="0" style="margin: 10px; user-select: none; position: absolute; display: none; bottom: 14px; right: 0px;">
+                                                        <div class="gmnoprint" style="display: none; position: absolute;">
+                                                            <div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255);">
+                                                                <button draggable="false" title="Zoom in" aria-label="Zoom in" type="button" class="gm-control-active"
+                                                                        style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; overflow: hidden;">
+                                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                         style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23333%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                                                                 style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23111%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                                                                                                         style="height: 18px; width: 18px;"></button>
+                                                                <div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230);"></div>
+                                                                <button draggable="false" title="Zoom out" aria-label="Zoom out" type="button" class="gm-control-active"
+                                                                        style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; overflow: hidden;">
+                                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                         style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                                                                 style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                                                                                                         style="height: 18px; width: 18px;"></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gmnoprint" controlwidth="40" controlheight="40" style="display: none; position: absolute;">
+                                                            <div style="width: 40px; height: 40px;">
+                                                                <button draggable="false" title="Rotate map 90 degrees" aria-label="Rotate map 90 degrees"
+                                                                        type="button" class="gm-control-active" style="background: none rgb(255, 255, 255); display: none; border: 0px; margin: 0px 0px 32px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;">
+                                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                         style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                                                                 style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                                                                                                         style="height: 18px; width: 18px;"></button>
+                                                                <button draggable="false" title="Tilt map" aria-label="Tilt map" type="button" class="gm-tilt gm-control-active"
+                                                                        style="background: none rgb(255, 255, 255); display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;">
+                                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                         style="width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                                                   style="width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                                                                             style="width: 18px;"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <div class="col-inner bs-30">
+                                            <div class="lm-info-block gray-default">
+                                                <i class="lnr lnr-phone-handset"></i>
+                                                <h4>415-832-2000</h4>
+                                                <span class="lm-info-block-value"></span>
+                                                <span class="lm-info-block-text"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-xs-12 col-sm-3">
+                                        <div class="col-inner bs-30">
+                                            <div class="lm-info-block gray-default">
+                                                <i class="lnr lnr-map-marker"></i>
+                                                <h4>San Francisco</h4>
+                                                <span class="lm-info-block-value"></span>
+                                                <span class="lm-info-block-text"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-xs-12 col-sm-3">
+                                        <div class="col-inner bs-30">
+                                            <div class="lm-info-block gray-default">
+                                                <i class="lnr lnr-envelope"></i>
+                                                <h4>alex@example.com</h4>
+                                                <span class="lm-info-block-value"></span>
+                                                <span class="lm-info-block-text"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-xs-12 col-sm-3">
+                                        <div class="col-inner bs-30">
+                                            <div class="lm-info-block gray-default">
+                                                <i class="lnr lnr-checkmark-circle"></i>
+                                                <h4>Freelance Available</h4>
+                                                <span class="lm-info-block-value"></span>
+                                                <span class="lm-info-block-text"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="row">
+                                <div class=" col-xs-12 col-sm-8 offset-sm-1 offset-sm-2">
+                                    <div class="col-inner ts-20">
+                                        <div class="block-title">
+                                            <h3>How Can I Help You?</h3>
+                                        </div>
+    
+                                        <form id="contact_form" class="contact-form" action="https://lmpixels.com/demo/kerge-html/version-1/contact_form/contact_form.php"
+                                              method="post" novalidate="true">
+    
+                                            <div class="messages"></div>
+    
+                                            <div class="controls two-columns">
+                                                <div class="fields clearfix">
+                                                    <div class="left-column">
+                                                        <div class="form-group form-group-with-icon">
+                                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name"
+                                                                   required="required" data-error="Name is required.">
+                                                            <div class="form-control-border"></div>
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+    
+                                                        <div class="form-group form-group-with-icon">
+                                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address"
+                                                                   required="required" data-error="Valid email is required.">
+                                                            <div class="form-control-border"></div>
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+    
+                                                        <div class="form-group form-group-with-icon">
+                                                            <input id="form_subject" type="text" name="subject" class="form-control" placeholder="Subject"
+                                                                   required="required" data-error="Subject is required.">
+                                                            <div class="form-control-border"></div>
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right-column">
+                                                        <div class="form-group form-group-with-icon">
+                                  <textarea id="form_message" name="message" class="form-control" placeholder="Message"
+                                            rows="7" required="required" data-error="Please, leave me a message."></textarea>
+                                                            <div class="form-control-border"></div>
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI">
+                                                    <div style="width: 304px; height: 78px;">
+                                                        <div>
+                                                            <iframe src="./web_profile/kerge/anchor.html" width="304" height="78" role="presentation" name="a-fbx5jxxa5i7b"
+                                                                    frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                                        </div>
+                                                        <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                                                                  style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                                    </div>
+                                                </div>
+    
+                                                <input type="submit" class="button btn-send disabled" value="Send message">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Contact Subpage -->
+    
+                </div>
+            </div>
+            <!-- /Page changer wrapper -->
+        </div>
+        <!-- /Main Content -->
+    </div>
+    
+    <a id="lm_demo_panel_switcher" class="lm-demo-panel-switcher right"><i class="fas fa-cogs"></i></a>
+    <div id="lm_demo_panel" class="lm-demo-panel right panel-color-red">
+        <div class="demo-panel-title">Main Color</div>
+        <div id="main_color" class="demo-panel-options">
+            <a data-id="blue">
+                <div class="preview color-1">&nbsp;</div>
+            </a>
+            <a data-id="red" class="current-main-color">
+                <div class="preview color-2">&nbsp;</div>
+            </a>
+            <a data-id="orange">
+                <div class="preview color-3">&nbsp;</div>
+            </a>
+            <a data-id="green">
+                <div class="preview color-4">&nbsp;</div>
+            </a>
+            <a data-id="purple">
+                <div class="preview color-5">&nbsp;</div>
+            </a>
+            <a data-id="yellow">
+                <div class="preview color-6">&nbsp;</div>
+            </a>
+        </div>
+    </div>
+    
+    <div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;">
+        <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div>
+        <div class="g-recaptcha-bubble-arrow"
+             style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div>
+        <div class="g-recaptcha-bubble-arrow"
+             style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div>
+        <div style="z-index: 2000000000; position: relative;">
+            <iframe title="recaptcha challenge" src="./Kerge - Resume _ CV _ vCard Template_files/bframe.html"
+                    name="c-fbx5jxxa5i7b" frameborder="0" scrolling="no"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                    style="width: 100%; height: 100%;"></iframe>
+        </div>
+    </div>
+    <div id="page-ajax-loaded" class="page-ajax-loaded animated rotateInDownRight"></div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./web_profile/kerge/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="./web_profile/kerge/pages-switcher.js"></script>
+    <script src="./web_profile/kerge/imagesloaded.pkgd.min.js"></script>
+    <script src="./web_profile/kerge/validator.js"></script>
+    <script src="./web_profile/kerge/jquery.shuffle.min.js"></script>
+    <script src="./web_profile/kerge/masonry.pkgd.min.js"></script>
+    <script src="./web_profile/kerge/owl.carousel.min.js"></script>
+    <script src="./web_profile/kerge/jquery.magnific-popup.min.js"></script>
+    <script src="./web_profile/kerge/api.js"></script>
+    <script type="text/javascript" src="./web_profile/kerge/js(1)"></script>
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>-->
+    <script src="./web_profile/kerge/jquery.googlemap.js"></script>
+    <script src="./web_profile/kerge/main.js"></script>
+    <script src="./web_profile/kerge/lmpixels-demo-panel.js"></script>
+
+    <script type="text/javascript" async="async" src="./web_profile/kerge/recaptcha__en_gb.js"></script>
+    <script type="text/javascript" async="async" src="./web_profile/kerge/analytics.js"></script>
+    <script src="./web_profile/kerge/modernizr.custom.js"></script>
+    <script async="async" src="./web_profile/kerge/js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./web_profile/kerge/app.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./web_profile/kerge/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./web_profile/kerge/util.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./web_profile/kerge/map.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./web_profile/kerge/geocoder.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./web_profile/kerge/onion.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./web_profile/kerge/controls.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./web_profile/kerge/marker.js"></script>
+{% endblock %}

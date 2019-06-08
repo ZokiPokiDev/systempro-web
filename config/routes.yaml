@@ -1,7 +1,9 @@
 home_page:
-    path: /
-    controller: App\Controller\PageController::indexAction
+    resource: './../src/Controller/PageController.php'
+    type:     annotation
+    prefix:   /
     
 web_profile:
-    path: /profile/
-    controller: App\Controller\WebProfileController::indexAction
+    resource: './../src/Controller/WebProfileController.php'
+    type:     annotation
+    prefix:   /profile
