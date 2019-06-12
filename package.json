@@ -19,6 +19,7 @@
         "node-sass": "^4.12.0",
         "owl.carousel": "^2.3.4",
         "popper": "^1.0.1",
+        "popper.js": "^1.15.0",
         "sass-loader": "^7.1.0",
         "scrollit": "^1.0.5",
         "validator": "^11.0.0",

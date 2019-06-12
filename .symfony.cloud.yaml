@@ -1,6 +1,6 @@
 name: systempro-web
 
-type: nodejs:10
+type: 'php:7.3'
 
 runtime:
     extensions:
@@ -21,7 +21,6 @@ disk: 2048
 
 mounts:
     "/var": { source: local, source_path: var }
-    "/node_modules": { source: local, source_path: node_modules }
 
 hooks:
     build: |
