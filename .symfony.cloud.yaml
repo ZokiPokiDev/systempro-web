@@ -1,6 +1,6 @@
 name: systempro-web
 
-type: 'php:7.3'
+type: 'php:7.1'
 
 runtime:
     extensions:
