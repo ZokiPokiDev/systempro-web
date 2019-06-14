@@ -23,7 +23,8 @@
         "sass-loader": "^7.1.0",
         "scrollit": "^1.0.5",
         "validator": "^11.0.0",
-        "webpack-notifier": "^1.6.0"
+        "webpack-notifier": "^1.6.0",
+        "yarn": "^1.16.0"
     },
     "license": "UNLICENSED",
     "private": true,
@@ -32,6 +33,14 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress",
+        "yarn:init": "yarn init",
+        "yarn:install": "yarn install",
         "heroku-postbuild": "encore production --progress"
-    }
+    },
+    "name": "systempro-web",
+    "version": "1.0.0",
+    "description": "Web app",
+    "main": "asset/js/app.js",
+    "repository": "https://github.com/ZokiPokiDev/systempro-web.git",
+    "author": "Zoran Panev"
 }
