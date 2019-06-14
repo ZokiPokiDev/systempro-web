@@ -12,3 +12,6 @@ services:
         expose:
             - "8083"
         command: "npm run build"
+        networks:
+            static-network:
+                ipv4_address: 172.31.0.7

@@ -27,7 +27,7 @@
         "yarn": "^1.16.0"
     },
     "license": "UNLICENSED",
-    "private": true,
+    "private": false,
     "scripts": {
         "dev-server": "encore dev-server",
         "dev": "encore dev",

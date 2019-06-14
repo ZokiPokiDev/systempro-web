@@ -8,3 +8,6 @@ services:
         command: composer update
         volumes:
             - ${SYMFONY_APP_PATH}:/app
+        networks:
+            static-network:
+                ipv4_address: 172.31.0.6
