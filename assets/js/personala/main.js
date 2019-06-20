@@ -1,11 +1,7 @@
 /*
  * Welcome to your personala's main JavaScript file!
- *
- * We recommend including the built version of this JavaScript file
- * (and its CSS file) in your base layout (base.html.twig).
  */
 
-// any CSS you require will output into a single css file (app.css in this case)
 import '../../css/personala/fonts.css';
 import '../../css/personala/helpers.css';
 import '../../css/personala/plugins.css';
@@ -14,7 +10,6 @@ import '../../css/personala/style.css';
 import $ from 'jquery';
 import './../../../node_modules/jquery-migrate/dist/jquery-migrate';
 import './../../../node_modules/popper.js/dist/popper';
-import './isotope.pkgd.min';
 import 'bootstrap';
 import './../../../node_modules/scrollit/scrollIt';
 import './animated_headline';
@@ -24,10 +19,17 @@ import './../../../node_modules/owl.carousel/dist/owl.carousel';
 import './../../../node_modules/magnific-popup/dist/jquery.magnific-popup';
 import './../../../node_modules/jquery.stellar/jquery.stellar';
 import './../../../node_modules/bootstrap-validator/dist/validator';
+import './../../../node_modules/isotope-layout/dist/isotope.pkgd';
+
+const jQueryBridget = require('jquery-bridget');
+const Isotope = require('isotope-layout');
+
+// make Isotope a jQuery plugin
+jQueryBridget( 'isotope', Isotope, $ );
 
 $(function () {
     const wind = $(window);
-    
+
     // scrollIt
     $.scrollIt({
         upKey: 38,                // key code to navigate to the next section
@@ -38,7 +40,7 @@ $(function () {
         onPageChange: null,       // function(pageIndex) that is called when page is changed
         topOffset: -63            // offste (in px) for fixed top navigation
     });
-    
+
     // navbar scrolling background
     wind.on("scroll", function () {
 
@@ -57,7 +59,7 @@ $(function () {
             logo.attr('src', 'img/logo-light.png');
         }
     });
-    
+
     // progress bar
     wind.on('scroll', function () {
         $(".skills-progress span").each(function () {
@@ -130,10 +132,10 @@ $(function () {
         delay: 10,
         time: 1500
     });
+
+    // popover
+    $('[data-toggle="popover"]').popover();
 });
-
-
-// === window When Loading === //
 
 $(window).on("load", function () {
 
@@ -145,18 +147,17 @@ $(window).on("load", function () {
 
     // stellar
     wind.stellar();
-    
+
     // isotope
     const $gallery = $('.gallery');
 
-    // $gallery.isotope({
-    //     // options
-    //     itemSelector: '.items'
-    // });
+    $gallery.isotope({
+        // options
+        itemSelector: '.items'
+    });
 
     // filter items on button click
     $('.filtering').on('click', 'span', function () {
-
         const filterValue = $(this).attr('data-filter');
         $gallery.isotope({filter: filterValue});
         $(this).addClass('active').siblings().removeClass('active');
@@ -166,6 +167,7 @@ $(window).on("load", function () {
     const $contact = $('#contact-form');
     $contact.validator();
 
+    // Submit contact form
     $contact.on('submit', function (e) {
         if (!e.isDefaultPrevented()) {
             const url = "contact.php";
@@ -189,8 +191,4 @@ $(window).on("load", function () {
         }
     });
 
-});
-
-$(document).ready(function() {
-    $('[data-toggle="popover"]').popover();
 });

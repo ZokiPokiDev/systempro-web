@@ -19,6 +19,7 @@ Encore
      */
     .addEntry('app', './assets/js/app.js')
     .addEntry('personala', './assets/js/personala/main.js')
+    .addEntry('docs', './assets/js/docs/main.js')
     // .addEntry('daniels', './assets/js/main.js')
     // .addEntry('kerge', './assets/js/main.js')
 

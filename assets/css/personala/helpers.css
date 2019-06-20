@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
           [ letter-spacing ]
 -------------------------------------------------------*/
 .ls0 {
-    letter-spacing: 0px !important;
+    letter-spacing: 0 !important;
 }
 
 .ls1 {

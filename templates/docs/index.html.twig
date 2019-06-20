@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{# links:
+    https://jhildenbiddle.github.io/docsify-themeable/#/quick-start?id=installation 
+    https://docsify.js.org/#/themes
+#}
+{% block stylesheets %}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="Docs HTML5 Template Zoran Panev ZoranPanev ZokiPoki onepage CV profile">
+    <meta name="description" content="Zoran Panev web profile">
+    <meta name="author" content="Zoran Panev">
+    {{ parent() }}
+    {{ encore_entry_link_tags('docs') }}
+{% endblock %}
+
+{% block content %}
+    <div id="app">Please wait...</div>
+    <div>Zoki docs</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('docs') }}
+{% endblock %}

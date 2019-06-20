@@ -7,3 +7,8 @@ web_profile:
     resource: './../src/Controller/WebProfileController.php'
     type:     annotation
     prefix:   /profile
+    
+docs:
+    resource: './../src/Controller/DocsController.php'
+    type:     annotation
+    prefix:   /docs

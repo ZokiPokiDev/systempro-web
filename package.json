@@ -6,11 +6,13 @@
         "bootstrap": "^4.3",
         "bootstrap-validator": "^0.11.9",
         "core-js": "^3.0.0",
+        "docsify-cli": "^4.3.0",
         "et-line": "^1.0.1",
         "helper-css": "^1.2.0",
         "isotope-layout": "^3.0.6",
         "jquery": "^3.4",
         "jquery-animated-headlines": "^1.0.0",
+        "jquery-bridget": "^2.0.1",
         "jquery-migrate": "^3.1.0",
         "jquery-waypoints": "^2.0.5",
         "jquery.counterup": "^2.1.0",
@@ -35,7 +37,8 @@
         "build": "encore production --progress",
         "yarn:init": "yarn init",
         "yarn:install": "yarn install",
-        "heroku-postbuild": "encore production --progress"
+        "heroku-postbuild": "encore production --progress",
+        "docsify:init": "docsify init ./docs"
     },
     "name": "systempro-web",
     "version": "1.0.0",
