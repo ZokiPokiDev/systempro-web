@@ -1,0 +1,33 @@
+version: '3.7'
+
+services:
+    database:
+        image: mysql
+        ports:
+            - ${MYSQL_PORT}:3306
+        volumes:
+            - ${DB_PATH}:/var/lib/mysql
+        environment:
+            DATABASE_URL: ${DATABASE_URL}
+        networks:
+            static-network:
+                ipv4_address: 172.31.0.2
+
+    adminer:
+        image: adminer
+        adminer:
+            volumes:
+                - ${SYMFONY_APP_PATH}var/sessions:/sessions
+        ports:
+            - ${PHPMYADMIN_PORT}:8080
+        networks:
+            static-network:
+                ipv4_address: 172.31.0.5
+
+networks:
+    static-network:
+        driver: bridge
+        ipam:
+            config:
+                -   subnet: 172.31.0.0/16
+                    gateway: 172.31.0.1

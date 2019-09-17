@@ -15,8 +15,16 @@
 {% endblock %}
 
 {% block content %}
-    <div id="app">Please wait...</div>
-    <div>Zoki docs</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 text-light">
+                {{ md }}
+            </div>
+            <div class="col-md-6 text-primary">
+                {{ md|raw }}
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block footer %}

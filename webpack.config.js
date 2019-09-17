@@ -73,4 +73,6 @@ Encore.configureWatchOptions(function(watchOptions) {
     watchOptions.poll = 250;
 });
 
-module.exports = Encore.getWebpackConfig();
+const config = Encore.getWebpackConfig();
+config.node = { fs: 'empty' };
+module.exports = config;

@@ -1,0 +1,42 @@
+version: '3.7'
+
+services:    
+    php:
+        image: php:7.2-fpm
+        user: ${LOCAL_USER}
+        working_dir: /usr/src/app
+        networks:
+            static-network:
+                ipv4_address: 172.31.0.2
+    nginx:
+        image: nginx
+        depends_on:
+            - php
+        networks:
+            static-network:
+                ipv4_address: 172.31.0.3
+    composer:
+        image: composer
+        working_dir: /usr/src/app
+        networks:
+            static-network:
+                ipv4_address: 172.31.0.4
+    nodejs:
+        image: node:12
+        user: ${NODE_USER}
+        working_dir: /home/node/app
+        environment:
+            - NODE_ENV=dev
+        expose:
+            - ${NODEJS_PORT}
+        networks:
+            static-network:
+                ipv4_address: 172.31.0.5
+
+networks:
+    static-network:
+        ipam:
+            driver: bridge
+            config:
+                - subnet: 172.31.0.0/24
+                - subnet: 172.31.0.1/14
