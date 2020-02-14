@@ -38,7 +38,7 @@
         "scrollit": "^1.0.5",
         "validator": "^11.0.0",
         "webpack-notifier": "^1.6.0",
-        "yarn": "^1.16.0"
+        "yarn": "^1.22.0"
     },
     "license": "UNLICENSED",
     "private": false,
